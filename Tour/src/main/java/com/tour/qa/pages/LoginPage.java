@@ -7,7 +7,6 @@ import com.tour.qa.mainbase.StartTest;
 
 
 public class LoginPage extends StartTest{
-	//Using page factory to define our elements
 	
 	@FindBy(name="userName")
 	WebElement username;

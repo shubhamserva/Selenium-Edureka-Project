@@ -14,7 +14,7 @@ public class StartTest {
 	public static WebDriver driver;
 	public static Properties prop;
 	
-	public StartTest()// creating Constructor to load the properties files.
+	public StartTest()
 	{
 		try {
 			prop=new Properties();
@@ -39,7 +39,7 @@ public class StartTest {
 		String browserName=prop.getProperty("browser");
 		if (browserName .equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "/C:/Users/M1050330/Downloads/chromedriver_76");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\Shubham\\src\\chromedriver.exe");
 			driver=new ChromeDriver();
 		}
 		driver.manage().window().maximize();
